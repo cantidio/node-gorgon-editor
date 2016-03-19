@@ -33,9 +33,14 @@ describe('Draggable', function() {
     expect(elementNode.tagName).toEqual('DIV');
   });
 
-  it('should render the children inside the main element', function(){
+  it('should render the correct number of children inside the main element', function(){
     const elementNode = this.selectDOM();
-    expect(elementNode.tagName).toEqual('DIV');
+    expect(elementNode.children.length).toBe(1);
+  });
+
+  it('should render the correct children inside the main element', function(){
+    const elementNode = this.selectDOM();
+    expect(elementNode.children[0].tagName).toEqual('H1');
   });
 
   it('should trigger the onDragStart on MouseDown', function(){
