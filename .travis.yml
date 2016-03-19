@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "5"
+  - '5'
 cache:
   directories:
     - node_modules
@@ -8,6 +8,14 @@ before_script:
   - npm install -g codeclimate-test-reporter
 after_success:
   - codeclimate-test-reporter < coverage/lcov.info
+deploy:
+  provider: npm
+  email: aniquilatorbloody@gmail.com
+  'on':
+    branch: master
+    tags: true
+  api_key:
+    - secure: ddPvH5pEDXZdNxWOZFYayVp7+QcQch632l7P+rHsbJSpkOKSZJNx13PcmvVkfrRVpDClMoa+zaUQZ4xW52GC2AuUOiFSGG44kIRPooLnySi6Yezrud44wYXFd12uioK/wiEdyBLKuW8QFSnOsEAGSeEiOVEOx7mawn51Z3nd5IRdY96jnI/Ly+HpcaehqcRRGsEQmIFrn/CNoqN1cNvqGmGuaLRnySRwC93OLzrB6+EN8XCBbH+kj59HGWtRornBknuDQHKLRNCgConhwrpZRJ64GNt+UQqhoRDcdryzFQpOO/QlkOHQgN4AgUEXQJiJ1MPqLLjE7awcf5Mfbdxx6tVdLizUDe5ceHwlTpo6x/lzVkZAf4xK4db3jVWyIrUswUVvu5VFDF869ZQDGUkicLtr9U3AQg0L+zGqeRckknefYVMVHqb2lQgvweS5hGI/w5FRW0wuQ7MvYRakxBa1S8iXFNtlbzoTPbSyVcbXPs/B/dbBtQedm0ycZZvNpHB15djWaalKx6EQjOodjUdl6RUaXAw64XRj/NBVV1zb8YXyHcP1xMRfVYPxKqKhhLBHhU+3WmWx9Y4GfAQuBtZGJgEV87JZPikwYj5MGGaA1bAqKtHEM9D1tM0FO1m4wTvv2THifWM54vOdMPWtBztfG1B+qJZYogEExaGcJwv0x2o=
 addons:
   apt:
     sources:
