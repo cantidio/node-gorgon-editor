@@ -6,6 +6,23 @@
   </head>
   <body>
     <div id="hello"></div>
-    <script src="bundle.js"></script>
+    <script>
+      function loadCode(src) {
+        const script = document.createElement('script');
+        script.src = src;
+        document.write(script.outerHTML);
+      }
+      (function() {
+        const bundle = 'dist/bundle.js';
+        const devBundle = 'http://localhost:3000' + bundle;
+        if(window.process && window.process.env.ELECTRON){
+          const isDev = window.process.env.NODE_ENV === 'dev';
+          const src = isDev ? devBundle : bundle;
+          loadCode(src);
+        } else {
+          loadCode(bundle);
+        }
+      }());
+    </script>
   </body>
 </html>
