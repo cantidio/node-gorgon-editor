@@ -1,0 +1,10 @@
+tests
+src
+docs
+dev-server.js
+.babelrc
+.codeclimate.yml
+.eslintrc
+.travis.yml
+.jshintrc
+.npmignore
