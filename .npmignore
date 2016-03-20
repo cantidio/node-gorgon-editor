@@ -2,6 +2,8 @@ tests
 src
 docs
 dev-server.js
+webpack.config.dev.js
+webpack.config.prod.js
 .babelrc
 .codeclimate.yml
 .eslintrc
