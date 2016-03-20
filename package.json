@@ -1,6 +1,6 @@
 {
   "name": "gorgon-editor",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "2D Game Sprite & Animation Editor",
   "main": "dist/electron.js",
   "repository": {
@@ -8,10 +8,16 @@
     "url": "https://github.com/cantidio/node-gorgon-editor"
   },
   "keywords": [
-    "react", "reactjs", "gorgon", "games",
-    "editor", "sprites", "animation", "pixel art"
+    "react",
+    "reactjs",
+    "gorgon",
+    "games",
+    "editor",
+    "sprites",
+    "animation",
+    "pixel art"
   ],
-  "bin":{
+  "bin": {
     "gorgon-editor": "dist/run-electron.js"
   },
   "scripts": {
