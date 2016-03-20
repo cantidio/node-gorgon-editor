@@ -1,6 +1,6 @@
 {
   "name": "gorgon-editor",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "2D Game Sprite & Animation Editor",
   "main": "dist/electron.js",
   "repository": {
