@@ -1,4 +1,3 @@
-'use strict';
 import { Draggable } from './components/index';
 import React from 'react';
 import ReactDOM from 'react-dom';
