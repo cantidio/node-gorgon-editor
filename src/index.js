@@ -15,8 +15,9 @@ const props = {
   onDragStop: (e) => console.log('on-drag-stop')
 };
 
+document.write('<div id="app-root"></div>');
 ReactDOM.render((
   <Draggable {...props}>
     <h1>Move me</h1>
   </Draggable>
-), document.getElementById('hello'));
+), document.getElementById('app-root'));
