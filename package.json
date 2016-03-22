@@ -25,6 +25,7 @@
     "build:webpack": "cross-env NODE_ENV=prod webpack --config webpack.config.prod.js",
     "build:electron": "cross-env NODE_ENV=prod babel src/electron.js -o dist/electron.js && babel src/run-electron.js -o dist/run-electron.js",
     "build": "npm run clean && npm run build:webpack && npm run build:electron",
+    "deploy:gh-pages": "node --harmony ./tools/gh-pages -d dist",
     "dev:start": "cross-env NODE_ENV=dev electron ./src/electron",
     "dev:server": "cross-env NODE_ENV=dev node dev-server.js",
     "dev": "concurrently --kill-others \"npm run dev:server\" \"npm run dev:start\"",
