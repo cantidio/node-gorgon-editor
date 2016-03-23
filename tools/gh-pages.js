@@ -29,6 +29,8 @@ console.log('gh-pages:publish:start');
 try {
   rimraf.sync(dstPath);
   exec(`git clone -q -b gh-pages ${url} ${dstPath}`);
+  exec('git config user.name Travis-CI', dstPath);
+  exec('git config user.email aniquilatorbloody@gmail.com', dstPath);
   exec('git rm *', dstPath);
   copy(srcPath, dstPath);
   exec('git add *', dstPath);
