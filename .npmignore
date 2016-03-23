@@ -1,6 +1,7 @@
 tests
 src
 docs
+tools
 dev-server.js
 webpack.config.dev.js
 webpack.config.prod.js
@@ -10,3 +11,4 @@ webpack.config.prod.js
 .travis.yml
 .jshintrc
 .npmignore
+.gh-pages

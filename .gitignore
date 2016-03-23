@@ -25,6 +25,7 @@ dist
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+.gh-pages
 
 # Dependency directory
 node_modules
