@@ -18,6 +18,6 @@ const props = {
 document.write('<div id="app-root"></div>');
 ReactDOM.render((
   <Draggable {...props}>
-    <h1>Move me around</h1>
+    <h1>Please Move me around</h1>
   </Draggable>
 ), document.getElementById('app-root'));
